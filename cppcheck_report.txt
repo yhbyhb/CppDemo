@@ -1,0 +1,41 @@
+CodeDefects/Bug.cpp:35:18: style: Condition 'len=ACCOUNT_DOMAIN_LEN' is always true [knownConditionTrueFalse]
+        if ((len = ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != L'\\'))
+                 ^
+CodeDefects/Bug.cpp:51:5: error: Memory leak: domain [memleak]
+    return false;
+    ^
+CodeDefects/Bug.cpp:62:12: error: Uninitialized variable: i [uninitvar]
+    return i + j;
+           ^
+CodeDefects/Bug.cpp:62:16: error: Uninitialized variable: j [uninitvar]
+    return i + j;
+               ^
+CodeDefects/Bug.cpp:62:12: error: Uninitialized variable: i [uninitvar]
+    return i + j;
+           ^
+CodeDefects/Bug.cpp:58:11: note: Assuming condition is false
+    if (n == 0)
+          ^
+CodeDefects/Bug.cpp:62:12: note: Uninitialized variable: i
+    return i + j;
+           ^
+CodeDefects/Bug.cpp:62:16: error: Uninitialized variable: j [uninitvar]
+    return i + j;
+               ^
+CodeDefects/Bug.cpp:58:11: note: Assuming condition is true
+    if (n == 0)
+          ^
+CodeDefects/Bug.cpp:62:16: note: Uninitialized variable: j
+    return i + j;
+               ^
+Annotations/annotations.cpp:10:0: style: The function 'AddTail' is never used. [unusedFunction]
+
+^
+CodeDefects/Bug.cpp:17:0: style: The function 'ProcessDomain' is never used. [unusedFunction]
+
+^
+CodeDefects/Bug.cpp:54:0: style: The function 'path_dependent' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+
