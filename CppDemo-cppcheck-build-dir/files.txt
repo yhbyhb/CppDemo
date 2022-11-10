@@ -1,0 +1,8 @@
+Bug.a1:Debug|Win32:C:/Users/hanbyul.yang/repos/playground1st/CppDemo/CodeDefects/Bug.cpp
+Bug.a2:Release|Win32:C:/Users/hanbyul.yang/repos/playground1st/CppDemo/CodeDefects/Bug.cpp
+Bug.a3:Debug|x64:C:/Users/hanbyul.yang/repos/playground1st/CppDemo/CodeDefects/Bug.cpp
+Bug.a4:Release|x64:C:/Users/hanbyul.yang/repos/playground1st/CppDemo/CodeDefects/Bug.cpp
+annotations.a1:Debug|Win32:C:/Users/hanbyul.yang/repos/playground1st/CppDemo/Annotations/annotations.cpp
+annotations.a2:Release|Win32:C:/Users/hanbyul.yang/repos/playground1st/CppDemo/Annotations/annotations.cpp
+annotations.a3:Debug|x64:C:/Users/hanbyul.yang/repos/playground1st/CppDemo/Annotations/annotations.cpp
+annotations.a4:Release|x64:C:/Users/hanbyul.yang/repos/playground1st/CppDemo/Annotations/annotations.cpp

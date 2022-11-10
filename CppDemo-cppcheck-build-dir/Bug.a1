@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="5832555549885282101">
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;len=ACCOUNT_DOMAIN_LEN&apos; is always true" verbose="Condition &apos;len=ACCOUNT_DOMAIN_LEN&apos; is always true" cwe="571" file0="C:/Users/hanbyul.yang/repos/playground1st/CppDemo/CodeDefects/Bug.cpp">
+            <location file="C:\Users\hanbyul.yang\repos\playground1st\CppDemo\CodeDefects\Bug.cpp" line="35" column="18" info="Condition &apos;len=ACCOUNT_DOMAIN_LEN&apos; is always true"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: domain" verbose="Memory leak: domain" cwe="401" file0="C:/Users/hanbyul.yang/repos/playground1st/CppDemo/CodeDefects/Bug.cpp">
+            <location file="C:\Users\hanbyul.yang\repos\playground1st\CppDemo\CodeDefects\Bug.cpp" line="51" column="5"/>
+            <symbol>domain</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: i" verbose="Uninitialized variable: i" cwe="457" file0="C:/Users/hanbyul.yang/repos/playground1st/CppDemo/CodeDefects/Bug.cpp">
+            <location file="C:\Users\hanbyul.yang\repos\playground1st\CppDemo\CodeDefects\Bug.cpp" line="62" column="12"/>
+            <location file="C:\Users\hanbyul.yang\repos\playground1st\CppDemo\CodeDefects\Bug.cpp" line="58" column="11" info="Assuming condition is false"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: j" verbose="Uninitialized variable: j" cwe="457" file0="C:/Users/hanbyul.yang/repos/playground1st/CppDemo/CodeDefects/Bug.cpp">
+            <location file="C:\Users\hanbyul.yang\repos\playground1st\CppDemo\CodeDefects\Bug.cpp" line="62" column="16"/>
+            <location file="C:\Users\hanbyul.yang\repos\playground1st\CppDemo\CodeDefects\Bug.cpp" line="58" column="11" info="Assuming condition is true"/>
+            <symbol>j</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="CheckDomain" lineNumber="7"/>
+    <functiondecl functionName="ReadUserAccount" lineNumber="12"/>
+    <functiondecl functionName="ProcessDomain" lineNumber="17"/>
+    <functiondecl functionName="path_dependent" lineNumber="54"/>
+    <functioncall functionName="ACCOUNT_DOMAIN_LEN"/>
+    <functioncall functionName="CheckDomain"/>
+    <functioncall functionName="ReadUserAccount"/>
+    <functioncall functionName="USER_ACCOUNT_LEN"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="domain"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="j"/>
+    <functioncall functionName="len"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="wcsnlen_s"/>
+  </FileInfo>
+</analyzerinfo>

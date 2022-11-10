@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.9"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;len=ACCOUNT_DOMAIN_LEN&amp;#039; is always true" verbose="Condition &amp;#039;len=ACCOUNT_DOMAIN_LEN&amp;#039; is always true" cwe="571" file0="CodeDefects/Bug.cpp" sinceDate="M/d/yyyy">
+            <location file="CodeDefects\Bug.cpp" line="35"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: domain" verbose="Memory leak: domain" cwe="401" file0="CodeDefects/Bug.cpp" sinceDate="M/d/yyyy">
+            <location file="CodeDefects\Bug.cpp" line="51"/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: i" verbose="Uninitialized variable: i" cwe="457" file0="CodeDefects/Bug.cpp" sinceDate="M/d/yyyy">
+            <location file="CodeDefects\Bug.cpp" line="62" info=""/>
+            <location file="CodeDefects\Bug.cpp" line="58" info="Assuming condition is false"/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: j" verbose="Uninitialized variable: j" cwe="457" file0="CodeDefects/Bug.cpp" sinceDate="M/d/yyyy">
+            <location file="CodeDefects\Bug.cpp" line="62" info=""/>
+            <location file="CodeDefects\Bug.cpp" line="58" info="Assuming condition is true"/>
+        </error>
+        <error id="uninitStructMember" severity="error" msg="Uninitialized struct member: result.next" verbose="Uninitialized struct member: result.next" cwe="457" file0="Annotations/annotations.cpp" sinceDate="M/d/yyyy">
+            <location file="Annotations\annotations.cpp" line="7"/>
+        </error>
+        <error id="uninitStructMember" severity="error" msg="Uninitialized struct member: result.data" verbose="Uninitialized struct member: result.data" cwe="457" file0="Annotations/annotations.cpp" sinceDate="M/d/yyyy">
+            <location file="Annotations\annotations.cpp" line="7"/>
+        </error>
+    </errors>
+</results>

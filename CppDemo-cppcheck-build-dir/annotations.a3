@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="16847109087399167006">
+        <error id="uninitStructMember" severity="error" msg="Uninitialized struct member: result.next" verbose="Uninitialized struct member: result.next" cwe="457" file0="C:/Users/hanbyul.yang/repos/playground1st/CppDemo/Annotations/annotations.cpp">
+            <location file="C:\Users\hanbyul.yang\repos\playground1st\CppDemo\Annotations\annotations.cpp" line="7" column="12"/>
+            <symbol>result.next</symbol>
+        </error>
+        <error id="uninitStructMember" severity="error" msg="Uninitialized struct member: result.data" verbose="Uninitialized struct member: result.data" cwe="457" file0="C:/Users/hanbyul.yang/repos/playground1st/CppDemo/Annotations/annotations.cpp">
+            <location file="C:\Users\hanbyul.yang\repos\playground1st\CppDemo\Annotations\annotations.cpp" line="7" column="12"/>
+            <symbol>result.data</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="LinkedList" file="C:/Users/hanbyul.yang/repos/playground1st/CppDemo/Annotations/annotations.h" line="4" col="1" hash="11118394571204681912"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/hanbyul.yang/repos/playground1st/CppDemo/Annotations/annotations.cpp:10:13" my-argnr="1" my-argname="node" file="C:/Users/hanbyul.yang/repos/playground1st/CppDemo/Annotations/annotations.cpp" line="13" col="12" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/hanbyul.yang/repos/playground1st/CppDemo/Annotations/annotations.cpp:10:13" my-argnr="1" my-argname="node" file="C:/Users/hanbyul.yang/repos/playground1st/CppDemo/Annotations/annotations.cpp" line="13" col="12" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="AllocateNode" lineNumber="4"/>
+    <functiondecl functionName="AddTail" lineNumber="10"/>
+    <functioncall functionName="AllocateNode"/>
+    <functioncall functionName="malloc"/>
+    <functioncall functionName="newNode"/>
+    <functioncall functionName="next"/>
+    <functioncall functionName="sizeof"/>
+    <functioncall functionName="static_cast"/>
+    <functioncall functionName="struct"/>
+    <functioncall functionName="value"/>
+    <functioncall functionName="while"/>
+  </FileInfo>
+</analyzerinfo>

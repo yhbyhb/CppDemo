@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.9"/>
+    <errors>
+        <error id="uninitStructMember" severity="error" msg="Uninitialized struct member: result.next" verbose="Uninitialized struct member: result.next" cwe="457" file0="Annotations/annotations.cpp">
+            <location file="Annotations\annotations.cpp" line="7" column="12"/>
+            <symbol>result.next</symbol>
+        </error>
+        <error id="uninitStructMember" severity="error" msg="Uninitialized struct member: result.data" verbose="Uninitialized struct member: result.data" cwe="457" file0="Annotations/annotations.cpp">
+            <location file="Annotations\annotations.cpp" line="7" column="12"/>
+            <symbol>result.data</symbol>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: domain" verbose="Memory leak: domain" cwe="401" file0="CodeDefects/Bug.cpp">
+            <location file="CodeDefects\Bug.cpp" line="51" column="5"/>
+            <symbol>domain</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: i" verbose="Uninitialized variable: i" cwe="457" file0="CodeDefects/Bug.cpp">
+            <location file="CodeDefects\Bug.cpp" line="62" column="12"/>
+            <location file="CodeDefects\Bug.cpp" line="58" column="11" info="Assuming condition is false"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: j" verbose="Uninitialized variable: j" cwe="457" file0="CodeDefects/Bug.cpp">
+            <location file="CodeDefects\Bug.cpp" line="62" column="16"/>
+            <location file="CodeDefects\Bug.cpp" line="58" column="11" info="Assuming condition is true"/>
+            <symbol>j</symbol>
+        </error>
+    </errors>
+</results>
