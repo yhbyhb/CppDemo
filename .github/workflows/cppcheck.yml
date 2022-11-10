@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v2
           
       - name: cppcheck
-        uses: deep5050/cppcheck-action@main
+        uses: chmorgan/cppcheck-action@v1.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN}}
           
